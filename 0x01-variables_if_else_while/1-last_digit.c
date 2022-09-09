@@ -4,8 +4,7 @@
 
 /**
  * main - Entry point
- * Description: get last digit of n and
- * Description: check for some functionality
+ * Description: get last digit of n and check for some functionality
  * Return: alway return 0
  */
 
@@ -30,5 +29,6 @@ int main(void)
 	{
 		printf("Last digit of %d is %d and is less that 6 and not 0\n", n, lastDigit);
 	}
+	return (0);
 }
 
