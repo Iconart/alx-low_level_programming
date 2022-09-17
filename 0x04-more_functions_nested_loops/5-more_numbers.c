@@ -2,6 +2,7 @@
 
 /**
  * more_numbers - function to print 1 - 14
+ * @i: i shold be checked
  * Return: void
  */
 
