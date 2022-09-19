@@ -6,7 +6,7 @@
  * Return: void
  */
 
-int _strlen(int *s)
+int _strlen(char *s)
 {
 	int count;
 	int length;
