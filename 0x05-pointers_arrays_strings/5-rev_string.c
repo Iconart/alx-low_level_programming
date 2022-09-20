@@ -17,11 +17,8 @@ void rev_string(char *s)
 	while (s[i] != '\0')
 		i++;
 
-	for (j = *loop; j >= 0; j--)
+	for (j = *loop - 1; j >= 0; j--)
 	{
-		if (s[j] != '\0')
-		{
-			putchar(s[j]);
-		}
+		*s = s[j];
 	}
 }
