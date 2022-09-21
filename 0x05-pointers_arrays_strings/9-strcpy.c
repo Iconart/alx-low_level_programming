@@ -2,7 +2,7 @@
 
 /**
  * _strcpy - function to copy string
- * @scr:  the content should be checked
+ * @scr: the content should be checked
  * @dest: the content should be checked
  * Return: dest
  */
