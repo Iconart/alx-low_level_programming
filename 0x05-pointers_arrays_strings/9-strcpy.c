@@ -7,13 +7,13 @@
  * Return: dest
  */
 
-char *_strcpy(char *dest, char *scr)
+char *_strcpy(char *dest, const char *src)
 {
 	int index = 0;
 
-	while (scr[index])
+	while (src[index])
 	{
-		dest[index] = scr[index];
+		dest[index] = src[index];
 		index++;
 	}
 	return (dest);
