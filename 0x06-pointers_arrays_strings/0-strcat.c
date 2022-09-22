@@ -21,9 +21,10 @@ char *_strcat(char *dest, char *src)
 	{
 		lenSrc++;
 	}
-	for (i = 0; i <= lenSrc; i++)
+
+	for (i = 0; i <= lenScr; i++)
 	{
-	       dest[lenDest + i] = scr[i];
+		dest[lenDest + i] = src[i];
 	}
 	return (dest);
 }
