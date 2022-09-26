@@ -2,22 +2,17 @@
 
 /**
  * main - Entry point
- *
+ * Description: print the size of data type
  * Return - 0 if successful
  */
 
 int main(void)
 {
-	char a;
-	int b;
-	long int c;
-	long long int d;
-	float f;
-
-	printf("Size of char: %lu byte(s)\n", (unsigned long) sizeof(a));
-	printf("Size of init: %lu byte(s)\n", (unsigned long) sizeof(b));
-	printf("Size of long int: %lu byte(s)\n", (unsigned long) sizeof(c));
-	printf("Size of lono long int: %lu byte(s)\n", (unsigned long) sizeof(d));
-	printf("Size of float: %lu byte(s)\n", (unsigned long) sizeof(f));
+	/*size of evaluate data type*/
+	printf("Size of char: %lu byte(s)\n", sizeof(char));
+	printf("Size of init: %lu byte(s)\n", sizeof(int));
+	printf("Size of long int: %lu byte(s)\n", sizeof(long int));
+	printf("Size of long long int: %lu byte(s)\n", sizeof(long long int));
+	printf("Size of float: %lu byte(s)\n", sizeof(float));
 	return (0);
 }
