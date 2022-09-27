@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * *_strchr(char *s, char c);
+ * _strchr(char *s, char c);
  * @s: this string should be checked
  * @c: this character should be checked
  * Return: c
