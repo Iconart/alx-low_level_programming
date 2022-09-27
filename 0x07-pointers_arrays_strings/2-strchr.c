@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * _strchr - (char *s, char c);
+ * _strchr - function to search for a present
+ * of a character in string;
  * @s: this string should be checked
  * @c: this character should be checked
  * Return: c
