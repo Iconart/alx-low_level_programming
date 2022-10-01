@@ -2,8 +2,8 @@
 
 /**
  * main - Entry point
- * @argc - the numbers of argument passed
- * @argv - the array of string passed
+ * @argc: the numbers of argument passed
+ * @argv: the array of string passed
  * Return: 0 if successful
  */
 
