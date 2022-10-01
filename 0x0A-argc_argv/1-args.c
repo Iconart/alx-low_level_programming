@@ -10,6 +10,10 @@
 int main(int argc, char *argv[])
 {
 	(void)argv;
-	printf("%d\n", argc);
+	if (argc > 0)
+	{
+		argc--;
+		printf("%d\n", argc);
+	}
 	return (0);
 }
