@@ -2,7 +2,7 @@
 
 /**
  * _calloc - function to allocate memory for an array
- * @nmeb: the number of element passed into the array
+ * @nmemb: the number of element passed into the array
  * @size: the size of byte of data type
  * Return: void
  */
@@ -10,7 +10,7 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	char *pointer;
-	int mul;
+	unsigned int mul;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
