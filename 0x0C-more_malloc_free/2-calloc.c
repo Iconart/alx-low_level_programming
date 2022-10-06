@@ -1,4 +1,4 @@
-#include "main.c"
+#include "main.h"
 
 /**
  * _calloc - function to allocate memory for an array
@@ -7,14 +7,15 @@
  * Return: void
  */
 
-void *_calloc(unsigned int nmeb, unsigned int size)
+void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	char *pointer;
-	int mul = size * nmeb;
+	int mul;
 
-	if (nmeb == 0 || size == 0)
+	if (nmemb == 0 || size == 0)
 		return (NULL);
-	pointer = malloc(nmeb * size);
+	mul = nmemb * size;
+	pointer = malloc(nmemb * size);
 
 	if (pointer == NULL)
 		return (NULL);
