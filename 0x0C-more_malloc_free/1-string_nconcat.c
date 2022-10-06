@@ -32,21 +32,22 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		sum = s1Len + s2Len;
 	else
 		sum = s1Len + n;
-	pointer = malloc(sizeof(*pointer) * sum);
+	pointer = malloc(sizeof(char *) * sum);
 	if (pointer == NULL)
 		return (NULL);
 	for (i = 0; i < s1Len; i++)
 		pointer[i] = s1[i];
 	if (n >= s2Len)
 	{
-		for (j = 0; j <= n; j++)
+		for (j = 0; j < n; j++)
 			pointer[s1Len + j] = s2[j];
+		pointer[s1Len + j] = '\0';
 	}
 	else
 	{
-		for (j = 0; j <= n; j++)
+		for (j = 0; j < n; j++)
 			pointer[s1Len + j] = s2[j];
-		pointer[s1Len + j + 1] = '\0';
+		pointer[s1Len + j] = '\0';
 	}
 	return (pointer);
 }
