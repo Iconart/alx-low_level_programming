@@ -32,7 +32,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		sum = s1Len + s2Len;
 	else
 		sum = s1Len + n;
-	pointer = malloc(sizeof(char *) * sum);
+	pointer = malloc(sizeof(*s1) * sum);
 	if (pointer == NULL)
 		return (NULL);
 	for (i = 0; i < s1Len; i++)
