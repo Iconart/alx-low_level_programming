@@ -10,6 +10,7 @@
 void *_calloc(unsigned int nmeb, unsigned int size)
 {
 	char *pointer;
+	int mul = size * nmeb;
 
 	if (nmeb == 0 || size == 0)
 		return (NULL);
@@ -18,7 +19,7 @@ void *_calloc(unsigned int nmeb, unsigned int size)
 	if (pointer == NULL)
 		return (NULL);
 
-	for (i = 0; i < nmeb; i++)
+	for (i = 0; i < mul; i++)
 		pointer[i] = 0;
 	return (pointer);
 }
