@@ -5,7 +5,6 @@
  */
 int main(void)
 {
-	char *oke = __FILE__;
-	printf("%s\n" oke);
+	printf("%s\n", __FILE__);
 	return (0);
 }
